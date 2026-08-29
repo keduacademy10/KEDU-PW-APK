@@ -1,0 +1,579 @@
+/* =========================================================
+   KEDU PW — ROOT THEME SYSTEM
+   ========================================================= */
+
+:root {
+    color-scheme: light;
+
+    /* ================= BRAND ================= */
+
+    --brand-navy: #0A1F5C;
+    --brand-navy-dark: #081947;
+    --brand-gold: #F4B400;
+    --brand-red: #FF2D2D;
+    --brand-white: #FFFFFF;
+
+
+    /* ================= LIGHT THEME ================= */
+
+    --page-background: #F7F8FB;
+    --surface: #FFFFFF;
+    --surface-soft: #F2F4F9;
+
+    --text-primary: #172033;
+    --text-secondary: #7B8394;
+    --text-muted: #929AA8;
+
+    --border-control: #E1E5EC;
+    --border-brand-soft: rgba(10,31,92,.10);
+    --divider-light: #E7EAF0;
+
+    --input-placeholder: #9AA1AF;
+    --input-border: #DCE1EA;
+
+    --shadow-brand-soft: rgba(10,31,92,.07);
+
+
+    /* ================= DARK THEME ================= */
+
+    --dark-background: #0B0B0B;
+    --dark-surface: #181818;
+    --dark-surface-soft: #242424;
+
+    --dark-text-secondary: #D0D0D0;
+    --dark-text-muted: #A8A8A8;
+
+    --dark-control-border: rgba(244,180,0,.55);
+    --dark-border: rgba(255,255,255,.12);
+    --dark-divider: #303030;
+    --dark-card-border: #333333;
+    --dark-input-border: #3A3A3A;
+
+    --shadow-dark: rgba(0,0,0,.30);
+
+
+    /* ================= MAIN UI ROLES ================= */
+
+    --navy: var(--brand-navy);
+    --navy-dark: var(--brand-navy-dark);
+    --gold: var(--brand-gold);
+    --red-fire: var(--brand-red);
+    --white: var(--brand-white);
+
+    --background: var(--page-background);
+    --bg-color: var(--page-background);
+
+    --card-bg: var(--surface);
+
+    --text: var(--text-primary);
+    --text-color: var(--text-primary);
+    --card-text: var(--text-primary);
+
+    --muted: var(--text-secondary);
+    --muted-text: var(--text-secondary);
+
+    --header-bg: var(--brand-navy);
+    --header-text: var(--brand-white);
+    --header-icon: var(--brand-white);
+
+    --control-bg: var(--surface);
+    --control-text: var(--text-primary);
+    --control-border: var(--border-control);
+
+    --border: var(--border-brand-soft);
+    --border-light: var(--divider-light);
+    --border-card: var(--border-control);
+    --divider: var(--divider-light);
+
+    --icon: var(--brand-navy);
+
+    --active-bg: var(--brand-gold);
+    --active-text: var(--brand-navy);
+
+    --input-bg: var(--surface);
+    --input-text: var(--text-primary);
+
+    --notification-bg: var(--surface);
+    --notification-text: var(--text-primary);
+    --notification-muted: var(--text-secondary);
+
+    --favorite-icon-bg: var(--surface-soft);
+    --favorite-empty-text: var(--brand-navy);
+
+    --shadow: 0 5px 18px var(--shadow-brand-soft);
+
+
+    /* ================= DRAWER ================= */
+
+    --drawer-overlay: rgba(0,0,0,.52);
+    --drawer-shadow: rgba(0,0,0,.18);
+    --drawer-header-border: rgba(255,255,255,.16);
+    --drawer-item-border: rgba(255,255,255,.14);
+    --submenu-background: rgba(0,0,0,.08);
+    --drawer-subitem-border: rgba(255,255,255,.10);
+    --drawer-divider: rgba(255,255,255,.18);
+
+
+    /* ================= NAVIGATION ================= */
+
+    --bottom-nav-shadow: rgba(10,31,92,.16);
+    --bottom-nav-active-shadow: rgba(10,31,92,.18);
+
+
+    /* ================= STUDY ================= */
+
+    --study-card-shadow: rgba(10,31,92,.07);
+    --study-icon-background: #F5F7FC;
+    --study-icon-border: #E1E5ED;
+    --study-category-text: #AAB1BD;
+
+    --study-card-active-shadow: rgba(10,31,92,.12);
+    --study-card-hover-shadow: rgba(10,31,92,.10);
+
+    --class-category-background: rgba(255,255,255,.72);
+
+    --search-focus-background: rgba(244,180,0,.12);
+    --dark-search-background: #1B1B1B;
+    --dark-search-clear: #CCCCCC;
+
+
+    /* ================= LECTURES ================= */
+
+    --lecture-tab-active: #7657E8;
+
+    --dark-lecture-nav-background: #292733;
+    --dark-lecture-nav-border: #4A4755;
+    --dark-lecture-tab: #D7D4E2;
+
+    --lecture-thumbnail-background: #E9EDF5;
+    --lecture-duration-overlay: rgba(0,0,0,.78);
+
+    --lecture-nav-border: #D9DCE3;
+    --lecture-date-text: #6B7280;
+
+
+    /* ================= ATTACHMENTS ================= */
+
+    --attachment-category-background: #D9D0E3;
+    --attachment-category-border: #C8B0E4;
+    --attachment-category-accent: #5B1B91;
+    --attachment-category-icon: #CBBBE0;
+
+    --attachment-category-open-shadow: rgba(10,31,92,.16);
+
+    --attachment-file-background: #EEEEEE;
+    --attachment-file-border: #D8D8D8;
+    --attachment-file-shadow: rgba(0,0,0,.05);
+
+    --attachment-empty-text: #7B6A8F;
+    --attachment-icon-color: #A89AB5;
+
+    --attachment-category-dark-background: #302A3A;
+    --attachment-category-dark-border: #51425F;
+    --attachment-category-dark-icon: #453752;
+    --attachment-category-dark-title: #D8B9F4;
+
+    --attachment-file-dark-background: #E9E9E9;
+    --attachment-file-dark-border: #D5D5D5;
+
+    --attachment-backdrop: rgba(0,0,0,.58);
+    --attachment-sheet-handle: #777;
+    --attachment-item-background: rgba(255,255,255,.025);
+    --attachment-item-active: rgba(255,255,255,.08);
+    --attachment-info-muted: #AAA;
+    --attachment-arrow: #DDD;
+
+
+    /* ================= PLAYER ================= */
+
+    --player-control-active: rgba(0,0,0,.60);
+    --player-autoplay-background: rgba(255,255,255,.28);
+    --player-autoplay-border: #555555;
+    --player-autoplay-thumb: rgba(0,0,0,.35);
+
+    --player-top-controls-background: rgba(0,0,0,.72);
+    --player-top-controls-transparent: rgba(0,0,0,0);
+
+    --player-main-play-background: rgba(10,31,92,.94);
+    --player-main-play-shadow: rgba(244,180,0,.20);
+
+    --player-skip-shadow: rgba(0,0,0,.38);
+
+    --player-bottom-controls-background: rgba(0,0,0,.88);
+    --player-bottom-controls-overlay: rgba(0,0,0,.48);
+
+    --player-current-time-color: rgba(80,80,80,.82);
+    --player-progress-track: rgba(255,255,255,.38);
+    --player-progress-thumb: rgba(0,0,0,.45);
+
+    --player-loader-background: rgba(255,255,255,.25);
+
+    --player-message-background: rgba(0,0,0,.92);
+    --player-message-text: rgba(255,255,255,.75);
+    --player-message-button-shadow: rgba(244,180,0,.6);
+
+    --player-subscribed-background: #E5E5E5;
+    --player-subscribed-text: #111111;
+
+    --player-action-shadow: rgba(0,0,0,.04);
+
+    --player-notes-background: #FFF4D6;
+    --player-notes-text: #8A6400;
+
+    --player-countdown-background: rgba(0,0,0,.70);
+    --player-caption-panel-background: rgba(0,0,0,.25);
+
+    --player-notes-border: #3A3110;
+    --player-notes-accent: #FFD54F;
+
+    --player-black: #000000;
+    --mini-player-shadow: rgba(0,0,0,.65);
+    --mini-player-play: #FFFFFF;
+
+    --player-description-background: #101010;
+    --player-description-header: #343434;
+    --player-description-toggle-border: #CFCFCF;
+    --player-description-stat: #AFAFAF;
+    --player-detail-secondary: #BDBDBD;
+    --player-scrollbar-thumb: #444444;
+
+    --player-bottom-actions-background: rgba(25,25,25,.72);
+    --player-fullscreen-active-shadow: rgba(244,180,0,.22);
+    --player-fullscreen-more-button: rgba(25,25,25,.78);
+    --player-fullscreen-more-panel: rgba(15,15,15,.95);
+    --player-fullscreen-more-overlay: rgba(0,0,0,.55);
+
+    --player-lock-button-border: rgba(255,255,255,.35);
+    --player-lock-button-background: rgba(20,20,20,.82);
+
+
+    /* ================= BATCH ================= */
+
+    --favorite-eyebrow: #9BA3B1;
+
+    --batch-search-background: #E2E6ED;
+    --batch-search-icon: #8B94A3;
+    --batch-search-placeholder: #9CA4B1;
+
+    --sort-active-shadow: rgba(0,0,0,.16);
+    --sort-overlay: rgba(0,0,0,.45);
+    --sort-sheet-handle: #D9DDE5;
+
+    --sort-option-icon-background: #F3F5FA;
+    --sort-option-active-background: #F1F4FA;
+
+    --batch-card-shadow: rgba(10,31,92,.08);
+    --batch-thumbnail-background: #F2F4F8;
+
+    --batch-session-text: #A87800;
+    --batch-session-background: #FFFDF5;
+
+    --favorite-active: #E63946;
+    --favorite-search-shadow: rgba(10,31,92,.05);
+
+    --toast-shadow: rgba(0,0,0,.20);
+
+
+    /* ================= SUBJECT ================= */
+
+    --subject-card-shadow: rgba(0,0,0,.08);
+    --subject-active-search-shadow: rgba(244,180,0,.45);
+
+    --lecture-pill-background: #D9F2FF;
+    --lecture-pill-text: #0077B6;
+
+    --chapter-pill-background: #EBD8FF;
+    --chapter-pill-text: #6A1B9A;
+
+    --dark-subject-card: #1E1E1E;
+
+    --dark-lecture-pill-background: #C8F7C5;
+    --dark-lecture-pill-text: #1B5E20;
+
+    --dark-chapter-pill-background: #8D6E63;
+
+
+    /* ================= SCHEDULE ================= */
+
+    --schedule-card-hover-shadow: rgba(10,31,92,.14);
+
+    --next-class-background: #EEF4FF;
+
+    --today-status-background: #E8F8EE;
+    --today-status-text: #1B8F3E;
+    --today-schedule-text: #14833B;
+
+    --schedule-upcoming-background: #E7F7EA;
+    --schedule-upcoming-text: #22863A;
+
+    --schedule-time-background: #EEF3FF;
+
+    --dark-schedule-date: #1F1F1F;
+
+    --schedule-card-border: #E1E4EA;
+    --schedule-full-date-text: #59657A;
+    --schedule-class-shadow: rgba(0,0,0,.07);
+
+    --schedule-live-background: #FBE9E9;
+    --schedule-live-text: #B42318;
+
+    --schedule-teacher-text: #687287;
+
+    --schedule-dot-scheduled: #22C55E;
+    --schedule-dot-no-class: #D1D5DB;
+    --schedule-dot-cancelled: #EF4444;
+
+
+    /* ================= PDF ================= */
+
+    --pdf-header-button-background: rgba(255,255,255,.14);
+    --pdf-header-button-hover: rgba(255,255,255,.22);
+
+    --pdf-counter-shadow: rgba(0,0,0,.18);
+    --pdf-tools-shadow: rgba(0,0,0,.28);
+
+    --attachment-pdf-shadow: rgba(10,31,92,.12);
+
+    --pdf-shape-option-background: #1D1D1D;
+    --pdf-editor-color-border: rgba(255,255,255,.45);
+
+    --pdf-editor-color-gray: #AAAAAA;
+    --pdf-editor-transparent-gray: #777777;
+
+    --dark-pdf-editor-border: #DDDDDD;
+    --pdf-shape-option-dark: #F1F1F1;
+
+
+    /* ================= DOWNLOAD ================= */
+
+    --download-card-shadow: rgba(0,0,0,.06);
+    --download-filter-active: rgba(244,180,0,.25);
+    --download-menu-shadow: rgba(0,0,0,.16);
+
+    --download-status-blue: #2196F3;
+    --download-status-muted: #888888;
+
+    --download-progress-track: rgba(128,128,128,.25);
+    --download-card-shadow-dark: rgba(0,0,0,.20);
+
+
+    /* ================= TEST ================= */
+
+    --test-page-background: #F8FAFD;
+    --test-header-button-active: rgba(255,255,255,.10);
+    --test-heading-muted: #667085;
+
+
+    /* ================= SOCIAL ================= */
+
+    --telegram-brand: #229ED9;
+    --whatsapp-brand: #128C7E;
+    --youtube-brand: #FF0000;
+    --instagram-brand: #C13584;
+    --pinterest-brand: #BD081C;
+
+    --social-icon-dark-background: rgba(255,255,255,.06);
+    --social-card-hover-shadow: rgba(10,31,92,.11);
+
+    --telegram-brand-dark: #0073AA;
+    --telegram-brand-soft: rgba(0,115,170,.16);
+
+    --whatsapp-brand-dark: #008357;
+    --whatsapp-brand-soft: rgba(0,131,87,.16);
+
+    --youtube-brand-dark: #B1173D;
+    --youtube-brand-soft: rgba(177,23,61,.16);
+
+    --instagram-gradient-purple: rgba(131,58,180,.20);
+    --instagram-gradient-pink: rgba(193,53,132,.20);
+    --instagram-gradient-red: rgba(225,48,108,.20);
+    --instagram-gradient-orange: rgba(247,119,55,.20);
+
+    --pinterest-brand-soft: rgba(230,0,35,.16);
+    --pinterest-brand-strong: #E60023;
+
+    --instagram-gradient-mid: #E1306C;
+    --instagram-gradient-red-strong: #FD1D1D;
+    --instagram-gradient-orange-strong: #F77737;
+    --whatsapp-brand-bright: #25D366;
+    --instagram-gradient-violet: #833AB4;
+
+    --social-overlay-background: rgba(0,0,0,.68);
+    --social-poster-overlay: rgba(255,255,255,.09);
+
+    --social-whatsapp-gradient: #0F8F83;
+    --social-telegram-gradient: #168DCC;
+    --social-youtube-gradient: #B00000;
+
+    --social-join-red-shadow: rgba(255,0,0,.22);
+
+    --social-platform-icon-background: rgba(255,255,255,.15);
+    --social-platform-icon-border: rgba(255,255,255,.9);
+
+    --social-notice-background: rgba(244,180,0,.09);
+    --social-cancel-text: #E5738D;
+
+    --social-whatsapp-shadow: rgba(37,211,102,.22);
+    --social-telegram-shadow: rgba(34,158,217,.22);
+
+
+    /* ================= CONTACT / SUPPORT ================= */
+
+    --contact-placeholder: #A3A9B5;
+    --contact-error: #C62828;
+    --contact-error-background: rgba(198,40,40,.06);
+
+    --contact-submit-shadow: rgba(10,31,92,.18);
+    --contact-submit-highlight: rgba(255,255,255,.30);
+    --contact-submit-active-shadow: rgba(10,31,92,.15);
+
+    --contact-success: #087443;
+
+    --support-icon-background: rgba(244,180,0,.14);
+    --support-safety-background: #ECEEF3;
+    --support-safety-text: #697386;
+
+
+    /* ================= ABOUT ================= */
+
+    --about-hero-text: rgba(255,255,255,.82);
+    --about-share-text: rgba(255,255,255,.80);
+    --about-share-input-border: rgba(255,255,255,.18);
+    --about-hero-dark-text: rgba(10,31,92,.78);
+    --about-feature-accent: rgba(244,180,0,.18);
+
+
+    /* ================= NOTIFICATIONS ================= */
+
+    --notifications-text: #111827;
+    --notifications-select-focus: rgba(80,60,190,.75);
+
+    --notifications-mark-all-shadow: rgba(10,31,92,.14);
+    --notification-group-text: #5B6472;
+
+    --notification-active-background: rgba(10,31,92,.04);
+    --notification-icon-background: rgba(244,180,0,.10);
+
+    --notifications-empty-icon-background: rgba(10,31,92,.06);
+
+    --notification-detail-overlay: rgba(0,0,0,.42);
+    --notification-detail-handle: rgba(100,100,100,.35);
+    --notification-detail-close-background: rgba(0,0,0,.06);
+
+    --notification-settings-overlay: rgba(0,0,0,.38);
+    --notification-settings-background: #202124;
+    --notification-settings-shadow: rgba(0,0,0,.12);
+    --notification-settings-handle: #B8B8B8;
+
+    --notification-switch-track: #D2D2D2;
+    --notification-switch-active: #6547D8;
+
+
+    /* ================= THEME DIALOG ================= */
+
+    --theme-dialog-overlay: rgba(0,0,0,.48);
+    --theme-option-active: rgba(10,31,92,.06);
+    --theme-option-radio: #9AA0AA;
+
+    --dark-theme-option-active: rgba(244,180,0,.08);
+
+
+    /* ================= STREAK ================= */
+
+    --streak-overlay: rgba(0,0,0,.52);
+    --streak-progress-shadow: rgba(244,180,0,.16);
+    --streak-progress-transparent: rgba(244,180,0,0);
+    --streak-day-complete-background: rgba(244,180,0,.10);
+    --progress-percent: 0%;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+    color-scheme: dark;
+
+    --background: var(--dark-background);
+    --bg-color: var(--dark-background);
+
+    --surface: var(--dark-surface);
+    --surface-soft: var(--dark-surface-soft);
+    --card-bg: var(--dark-surface);
+
+    --text: var(--brand-white);
+    --text-primary: var(--brand-white);
+    --text-color: var(--brand-white);
+    --card-text: var(--brand-white);
+
+    --text-secondary: var(--dark-text-secondary);
+    --text-muted: var(--dark-text-muted);
+
+    --muted: var(--dark-text-muted);
+    --muted-text: var(--dark-text-muted);
+
+    --header-bg: var(--brand-gold);
+    --header-text: var(--brand-navy);
+    --header-icon: var(--brand-navy);
+
+    --control-bg: var(--dark-surface);
+    --control-text: var(--brand-white);
+    --control-border: var(--dark-control-border);
+
+    --border: var(--dark-border);
+    --border-light: var(--dark-divider);
+    --border-card: var(--dark-card-border);
+    --divider: var(--dark-divider);
+
+    --icon: var(--brand-gold);
+
+    --active-bg: var(--brand-gold);
+    --active-text: var(--brand-navy);
+
+    --input-bg: var(--dark-surface);
+    --input-text: var(--brand-white);
+    --input-placeholder: var(--dark-text-muted);
+    --input-border: var(--dark-input-border);
+
+    --notification-bg: var(--dark-surface);
+    --notification-text: var(--brand-white);
+    --notification-muted: var(--dark-text-muted);
+
+    --favorite-icon-bg: var(--dark-surface-soft);
+    --favorite-empty-text: var(--brand-white);
+
+    --shadow: 0 8px 24px var(--shadow-dark);
+}
+
+
+/* =========================================================
+   FUTURE THEME SYSTEM
+   =========================================================
+   Add new themes here later.
+   Example:
+   data-theme="blue"
+   data-theme="green"
+   ========================================================= */
+
+:root[data-theme="blue"],
+body[data-theme="blue"] {
+    --brand-navy: #0B4F9C;
+    --brand-navy-dark: #083B75;
+}
+
+:root[data-theme="green"],
+body[data-theme="green"] {
+    --brand-navy: #146B45;
+    --brand-navy-dark: #0D4B31;
+}
+
+/* =========================================================
+   KEDU PW — SCHEDULE VARIABLE FALLBACKS
+   ========================================================= */
+
+:root{
+  --schedule-upcoming-alt-background:#E9ECEF;
+  --schedule-upcoming-alt-text:#495057;
+  --schedule-next-month-shadow:rgba(10,31,92,.18);
+}

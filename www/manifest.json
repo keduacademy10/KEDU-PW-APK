@@ -1,0 +1,32 @@
+{
+    "name": "KEDU PW",
+    "short_name": "KEDU PW",
+    "description": "KEDU PW - Learn, Practice and Grow",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#F5F7FB",
+    "theme_color": "#0A1F5C",
+    "lang": "en",
+    "dir": "ltr",
+
+    "icons": [
+        {
+            "src": "assets/logo/kedupw.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/logo/kedupw.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+
+    "categories": [
+        "education"
+    ]
+}

@@ -1,0 +1,197 @@
+/* =========================================
+   KEDU PW — LOADING SCREEN
+========================================= */
+
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #0A1F5C;
+
+    transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+}
+
+
+/* Loading screen hidden */
+
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LOADING CONTAINER
+========================================= */
+
+.loading-container {
+    width: min(86%, 380px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.loading-logo {
+    width: 180px;
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.loading-logo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    /*
+     * Continuous gentle zoom
+     */
+    animation: logoZoom 2.2s ease-in-out infinite;
+}
+
+
+/* =========================================
+   LOGO ZOOM ANIMATION
+========================================= */
+
+@keyframes logoZoom {
+
+    0% {
+        transform: scale(0.92);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(0.92);
+    }
+}
+
+
+/* =========================================
+   LOADING MESSAGE
+========================================= */
+
+.loading-message {
+    min-height: 24px;
+
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress-wrapper {
+    width: 100%;
+}
+
+
+.progress-track {
+    position: relative;
+
+    width: 100%;
+    height: 7px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    border-radius: 20px;
+}
+
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+
+    background: #F4B400;
+
+    border-radius: 20px;
+
+    transition: width 0.15s linear;
+}
+
+
+/* =========================================
+   PROGRESS INFORMATION
+========================================= */
+
+.progress-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+#progress-percent {
+    color: #F4B400;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .loading-logo {
+        width: 155px;
+        height: 155px;
+
+        margin-bottom: 26px;
+    }
+
+    .loading-message {
+        font-size: 14px;
+    }
+
+    .progress-track {
+        height: 6px;
+    }
+}

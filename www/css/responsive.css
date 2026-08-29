@@ -1,0 +1,202 @@
+/* =========================================================
+   KEDU PW — RESPONSIVE SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL MOBILE HEADER
+   ========================================================= */
+
+@media (max-width: 600px){
+
+    .app-header{
+        width:100%;
+        height:76px;
+        min-height:76px;
+
+        padding:0 11px;
+
+        display:flex;
+        align-items:center;
+
+        box-sizing:border-box;
+    }
+
+
+    .header-menu-button{
+        width:45px;
+        height:45px;
+
+        flex:0 0 45px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+
+    .header-menu-button svg{
+        width:31px;
+        height:31px;
+    }
+
+
+    .header-brand{
+        min-width:0;
+    }
+
+
+    .header-brand img{
+        width:44px;
+        height:44px;
+    }
+
+
+    .header-brand span{
+        margin-left:9px;
+        font-size:20px;
+    }
+
+
+    .header-actions{
+        gap:2px;
+    }
+
+
+    .streak-button{
+        min-width:42px;
+        height:45px;
+    }
+
+
+    .notification-button{
+        width:43px;
+        height:45px;
+    }
+
+}
+
+
+/* =========================================================
+   FAVORITE PAGE — MOBILE
+   ========================================================= */
+
+@media (max-width:600px){
+
+    .favorite-page{
+        width:100%;
+        height:100dvh;
+        padding-bottom:105px;
+        box-sizing:border-box;
+    }
+
+    .favorite-page-header{
+        position:sticky;
+        top:0;
+        left:0;
+
+        width:100%;
+        height:76px;
+        min-height:76px;
+
+        padding:0 11px;
+
+        display:flex;
+        align-items:center;
+
+        background:var(--navy);
+        color:var(--white);
+
+        z-index:1000;
+        box-sizing:border-box;
+    }
+
+    .favorite-page-header .header-menu-button{
+        width:45px;
+        height:45px;
+
+        flex:0 0 45px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        color:var(--white);
+    }
+
+    .favorite-page-header .header-menu-button svg{
+        width:31px;
+        height:31px;
+
+        fill:none;
+        stroke:currentColor;
+
+        stroke-width:2.4;
+        stroke-linecap:round;
+    }
+
+    .favorite-header-title{
+        display:block;
+
+        margin:0 0 0 12px;
+        padding:0;
+
+        color:var(--white);
+
+        font-size:23px;
+        font-weight:800;
+
+        line-height:1;
+        white-space:nowrap;
+    }
+
+    .favorite-page-content{
+        width:100%;
+        max-width:900px;
+
+        margin:0 auto;
+        box-sizing:border-box;
+    }
+
+    .favorite-search{
+        width:calc(100% - 22px);
+        height:48px;
+
+        margin:14px auto 16px;
+        box-sizing:border-box;
+    }
+
+}
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width:360px){
+
+    .favorite-page-header{
+        height:72px;
+        min-height:72px;
+        padding:0 9px;
+    }
+
+    .favorite-page-header .header-menu-button{
+        width:43px;
+        height:43px;
+        flex-basis:43px;
+    }
+
+    .favorite-page-header .header-menu-button svg{
+        width:29px;
+        height:29px;
+    }
+
+    .favorite-header-title{
+        margin-left:10px;
+        font-size:21px;
+    }
+
+    .favorite-search{
+        width:calc(100% - 18px);
+    }
+
+}

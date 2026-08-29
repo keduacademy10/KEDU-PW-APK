@@ -1,0 +1,8 @@
+node_modules/
+.gradle/
+android/.gradle/
+*.apk
+*.aab
+KEDU-PW-LARGE-FILES-BACKUP/
+www/assets/videos/
+android/app/src/main/assets/public/assets/videos/
